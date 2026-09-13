@@ -1,0 +1,54 @@
+const specialisations=[
+ {name:"Robotics & Autonomous Systems",bg:"ECE, Mechatronics, Mechanical",skills:"ROS2 • navigation • controls • robot integration",roles:"Robotics Engineer • Deployment Engineer"},
+ {name:"Embedded Robotics",bg:"ECE, Electrical",skills:"MCUs • sensors • firmware • CAN/serial • motor control",roles:"Embedded Engineer • Controls Engineer"},
+ {name:"AI & Computer Vision",bg:"CSE, ECE",skills:"Python • C++ • OpenCV • ML • perception",roles:"Vision Engineer • Robotics AI Engineer"},
+ {name:"Industrial Automation",bg:"ECE, Electrical, Instrumentation",skills:"PLC • SCADA • HMI • drives • safety",roles:"Automation Engineer • Controls Engineer"},
+ {name:"Robotic Inspection",bg:"ECE, Mechanical, CSE",skills:"cameras • thermal • LiDAR • sensor fusion • reporting",roles:"Inspection Engineer • Field Engineer"},
+ {name:"Robotic Safety & ISO 45001",bg:"All engineering backgrounds",skills:"hazard ID • risk assessment • confined spaces • audits",roles:"Robotic Safety Engineer • Inspection Supervisor"},
+ {name:"Warehouse & AMRs",bg:"ECE, CSE, Mechatronics",skills:"AMR • fleet management • mapping • WMS integration",roles:"AMR Engineer • Fleet Engineer"},
+ {name:"Hazardous-Environment Robotics",bg:"ECE, Mechanical, Instrumentation",skills:"gas detection • remote operation • ruggedisation",roles:"Hazard Inspection Engineer • Field Technician"},
+ {name:"Agricultural Robotics",bg:"ECE, CSE, Mechanical",skills:"vision • GPS • actuation • field robotics",roles:"Agri-Robotics Engineer • Field Engineer"}
+];
+const jobs=[
+ ["Robotics Engineer Trainee","Entry","ECE / Mechatronics / Mechanical","robot operation, testing, basic controls"],["Robot Operator","Entry","ITI/Diploma / ECE / Mechatronics","teleoperation, sensors, safety procedures"],["Robotics Field Engineer","Junior","ECE / Electrical / Mechanical","installation, commissioning, troubleshooting"],["Service Engineer – Robotics","Junior","ECE / Electrical / Mechanical","maintenance, diagnostics, customer training"],["Robotics Deployment Engineer","Junior","ECE / Mechatronics / CSE","integration, site readiness, commissioning"],["Robotics Testing Engineer","Entry","ECE / CSE / Mechatronics","test plans, sensors, safety interlocks"],["Junior Control Systems Engineer","Entry","ECE / Electrical","motors, controllers, feedback, PLC basics"],["Junior Embedded Engineer","Entry","ECE","microcontrollers, sensors, firmware, communications"],["Automation Engineer","Junior","ECE / Electrical / Instrumentation","PLC, SCADA, drives, industrial networks"],["Robotic Inspection Engineer","Junior","ECE / CSE / Mechanical","camera/sensor inspection, data and reports"],["Robotic Safety Engineer","Junior","Engineering + safety","risk assessment, inspection, ISO 45001"],["Computer Vision Engineer","Junior","CSE / ECE","OpenCV, ML, perception, image analytics"],["Robotics Software Engineer","Junior","CSE / ECE","Python/C++, ROS2, algorithms"],["ROV / Underwater Robotics Engineer","Junior","ECE / Mechanical","ROV controls, tethering, inspection"],["Robot Programmer / Application Engineer","Junior","ECE / Mechatronics / Mechanical","robot programming, integration, commissioning"]
+];
+const companies=[
+ ["Genrobotics","Sewer, sanitation, hazardous environments, medical/mobility","Robotics • field service • embedded • controls","https://www.genrobotics.com/","https://www.genrobotics.com/"],
+ ["Solinas Integrity","Sewer, septic tank and pipeline robotics","Robotics • inspection • field engineering","https://solinas.in/","https://solinas.in/"],
+ ["Detect Technologies","Industrial AI, safety and asset monitoring","AI • computer vision • inspection","https://detecttechnologies.com/","https://detecttechnologies.com/"],
+ ["Gridbots","Industrial and hazardous-environment robotics","Robotics • embedded • inspection","https://www.gridbots.com/","https://www.gridbots.com/"],
+ ["Planys Technologies","Underwater robotic inspection","ROV • robotics • inspection","https://planys.com/","https://planys.com/"],
+ ["EyeROV","Underwater inspection and ROV systems","ROV • embedded • field engineering","https://eyerov.com/","https://eyerov.com/support/"],
+ ["Addverb Technologies","Warehouse robotics and automation","AMR • controls • software • fleet","https://addverb.com/","https://addverb.com/careers/"],
+ ["GreyOrange","AI-enabled warehouse automation","Robotics • AI • software","https://www.greyorange.com/","https://www.greyorange.com/careers/"],
+ ["Ati Motors","Autonomous mobile robots","AMR • controls • embedded","https://atimotors.com/","https://atimotors.com/careers/"],
+ ["Systemantics","Industrial robot manufacturing","Robotics • controls • programming","https://www.systemantics.com/","https://www.systemantics.com/"],
+ ["FANUC India","Industrial robotics and automation","Applications • service • automation","https://www.fanucindia.com/","https://www.fanucindia.com/"],
+ ["KUKA India","Industrial robotics and Industry 4.0","Robotics • application • service","https://www.kuka.com/en-in","https://www.kuka.com/en-in/careers"],
+ ["ABB India","Robotics, automation and digital systems","Robotics • controls • software","https://new.abb.com/in","https://careers.abb/"],
+ ["Omron Automation India","Automation, vision and robotics","Automation • vision • robotics","https://automation.omron.com/indian/","https://careers.omron.com/"],
+ ["Yaskawa India","Industrial robots, drives and motion","Robotics • controls • service","https://www.yaskawaindia.in/","https://www.yaskawaindia.in/"],
+ ["Wipro PARI","Factory automation and robotics","Automation • robotics • controls","https://wipropari.com/","https://wipropari.com/"],
+ ["DiFACTO Robotics","Industrial robotic automation","Robotics • programming • automation","https://www.difacto.com/","https://www.difacto.com/"],
+ ["Peer Robotics","Collaborative/mobile robots","Robotics • embedded • field","https://www.peerrobotics.ai/","https://www.peerrobotics.ai/"],
+ ["Unbox Robotics","Warehouse sorting robotics","Robotics • software • deployment","https://unboxrobotics.com/","https://unboxrobotics.com/"],
+ ["Flux Auto","Autonomous industrial vehicles","Autonomy • embedded • robotics","https://www.fluxauto.ai/","https://www.fluxauto.ai/"],
+ ["Tata Electronics","Electronics manufacturing and automation","Automation • equipment • controls","https://www.tataelectronics.com/","https://www.tataelectronics.com/careers"],
+ ["Tata Technologies","Manufacturing and digital engineering","Automation • manufacturing • robotics","https://www.tatatechnologies.com/","https://www.tatatechnologies.com/careers/"],
+ ["Tata Elxsi","Automotive, embedded and autonomous systems","Embedded • AI • vision","https://www.tataelxsi.com/","https://www.tataelxsi.com/careers"],
+ ["KPIT Technologies","Automotive software and autonomous systems","Embedded • autonomy • AI","https://www.kpit.com/","https://www.kpit.com/careers-overview/"],
+ ["Bosch India","Automotive, sensors and industrial technology","Embedded • controls • automation","https://www.bosch.in/","https://www.bosch.in/careers/"],
+ ["Siemens India","Industrial automation and digital manufacturing","PLC • SCADA • controls","https://www.siemens.com/in/en.html","https://www.siemens.com/in/en/company/jobs.html"],
+ ["LTTS","Engineering, embedded and industrial technology","Embedded • automation • AI","https://www.ltts.com/","https://www.ltts.com/careers"],
+ ["Honeywell Automation India","Process automation and safety","Controls • instrumentation • safety","https://www.honeywell.com/in/en","https://careers.honeywell.com/"],
+ ["Rockwell Automation India","Industrial automation and controls","PLC • controls • field","https://www.rockwellautomation.com/en-in.html","https://www.rockwellautomation.com/en-us/company/careers.html"],
+ ["Mahindra Group","Automotive/manufacturing automation","Robotics • controls • manufacturing","https://www.mahindra.com/","https://www.mahindra.com/career"]
+];
+const resources=[
+ ["ROS 2 Documentation","Foundation for robotics software and robot integration","https://docs.ros.org/"],["Arduino Learn","Beginner electronics, microcontrollers and sensors","https://docs.arduino.cc/learn/"],["Python Documentation","Core programming foundation for CSE/ECE robotics tracks","https://docs.python.org/3/"],["OpenCV Documentation","Computer vision foundations","https://docs.opencv.org/"],["NPTEL","Indian university-level engineering courses across robotics, controls and AI","https://nptel.ac.in/"],["ISO 45001 overview","Understand occupational health & safety management systems","https://www.iso.org/iso-45001-occupational-health-and-safety.html"]
+];
+function renderSpecialisations(){document.querySelector("#specialisation-grid").innerHTML=specialisations.map(s=>`<article class="card specialisation"><div class="tag">${s.bg}</div><h3>${s.name}</h3><p>${s.skills}</p><p><strong>Potential roles:</strong> ${s.roles}</p></article>`).join("");}
+function renderJobs(){const q=document.querySelector("#job-search").value.toLowerCase(),level=document.querySelector("#job-level").value,bg=document.querySelector("#job-background").value;const rows=jobs.filter(j=>(!q||j.join(" ").toLowerCase().includes(q))&&(!level||j[1]===level)&&(!bg||j[2].includes(bg)));document.querySelector("#job-table").innerHTML=`<table class="job-table"><thead><tr><th>Job title</th><th>Level</th><th>Background</th><th>Core work</th></tr></thead><tbody>${rows.map(j=>`<tr>${j.map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")}</tbody></table>`;}
+function renderCompanies(){const q=(document.querySelector("#company-search")?.value||"").toLowerCase();const rows=companies.filter(c=>!q||c.join(" ").toLowerCase().includes(q));document.querySelector("#company-grid").innerHTML=rows.map(c=>`<article class="card company"><h3>${c[0]}</h3><p>${c[1]}</p><p class="small"><strong>Job families:</strong> ${c[2]}</p><div class="company-links"><a href="${c[3]}" target="_blank" rel="noopener">Official website ↗</a><a href="${c[4]}" target="_blank" rel="noopener">Careers / company ↗</a></div></article>`).join("");}
+function renderResources(){document.querySelector("#resource-grid").innerHTML=resources.map(r=>`<article class="card resource"><h3>${r[0]}</h3><p>${r[1]}</p><a href="${r[2]}" target="_blank" rel="noopener">Open resource ↗</a></article>`).join("");}
+renderSpecialisations();renderJobs();renderCompanies();renderResources();["job-search","job-level","job-background"].forEach(id=>document.getElementById(id).addEventListener("input",renderJobs));document.getElementById("job-level").addEventListener("change",renderJobs);document.getElementById("job-background").addEventListener("change",renderJobs);document.getElementById("company-search").addEventListener("input",renderCompanies);document.querySelector(".menu").addEventListener("click",()=>document.querySelector(".nav-links").classList.toggle("show"));

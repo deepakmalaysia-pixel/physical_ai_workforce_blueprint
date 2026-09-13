@@ -1,0 +1,142 @@
+{
+  "entities": {
+    "students": [
+      "id",
+      "name",
+      "email",
+      "education_level",
+      "degree",
+      "branch",
+      "graduation_year",
+      "experience_years",
+      "location",
+      "target_pathway",
+      "target_specialisation",
+      "skills_current",
+      "skills_target",
+      "portfolio_url",
+      "profile_status",
+      "created_at",
+      "updated_at"
+    ],
+    "job_roles": [
+      "id",
+      "title",
+      "level",
+      "backgrounds",
+      "specialisation_ids",
+      "core_skills",
+      "preferred_skills",
+      "certifications",
+      "industry_sectors",
+      "employer_ids",
+      "source_url",
+      "source_date",
+      "verification_status"
+    ],
+    "companies": [
+      "id",
+      "name",
+      "city",
+      "state",
+      "sector",
+      "robotics_focus",
+      "job_families",
+      "career_url",
+      "company_url",
+      "industry_partner",
+      "last_verified"
+    ],
+    "resources": [
+      "id",
+      "title",
+      "provider",
+      "type",
+      "specialisation_ids",
+      "skill_level",
+      "cost_type",
+      "url",
+      "language",
+      "description",
+      "last_verified"
+    ],
+    "projects": [
+      "id",
+      "title",
+      "difficulty",
+      "specialisation_id",
+      "skills",
+      "equipment",
+      "deliverables",
+      "assessment_method",
+      "safety_notes"
+    ],
+    "courses": [
+      "id",
+      "provider",
+      "title",
+      "specialisation_ids",
+      "duration",
+      "delivery_mode",
+      "price",
+      "certificate",
+      "url",
+      "last_verified"
+    ],
+    "certifications": [
+      "id",
+      "name",
+      "issuer",
+      "domain",
+      "eligibility",
+      "url",
+      "last_verified"
+    ],
+    "standards": [
+      "id",
+      "name",
+      "jurisdiction",
+      "topic",
+      "summary",
+      "official_url",
+      "last_verified"
+    ],
+    "applications": [
+      "id",
+      "student_id",
+      "company_id",
+      "job_role_id",
+      "status",
+      "applied_at",
+      "source_url"
+    ],
+    "training_providers": [
+      "id",
+      "name",
+      "city",
+      "state",
+      "programs",
+      "equipment",
+      "placement_support",
+      "industry_partners",
+      "contact_url",
+      "verification_status"
+    ],
+    "content_updates": [
+      "id",
+      "entity_type",
+      "entity_id",
+      "change_note",
+      "source_url",
+      "checked_by",
+      "checked_at"
+    ]
+  },
+  "design_principles": [
+    "Every employer/job claim should carry a dated source.",
+    "Separate career guidance from live vacancy data.",
+    "Show prerequisites and projects before recommending a course.",
+    "Never imply a safety certificate authorises hazardous entry.",
+    "Prefer official employer, standards-body and training-provider sources."
+  ]
+}

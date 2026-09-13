@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Physical AI Workforce India — pathways for engineering graduates, robot operators, technicians and safety inspectors.">
+  <title>Physical AI Workforce India</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="#home">Physical AI <span>Workforce India</span></a>
+    <button class="menu" aria-label="Toggle menu">☰</button>
+    <div class="nav-links">
+      <a href="#pathways">Pathways</a>
+      <a href="#specialisations">Specialisations</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#companies">Companies</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">INDIA'S EMERGING PHYSICAL-AI WORKFORCE</p>
+      <h1>Turn robotics into <span>careers</span>, not just courses.</h1>
+      <p class="lead">A practical career map connecting engineering graduates, technicians and robot operators to skills, projects, employers and real-world applications.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#pathways">Find your pathway</a>
+        <a class="btn secondary" href="#jobs">Explore job roles</a>
+      </div>
+      <div class="hero-note">Start with what you already know. Build the missing layer. Demonstrate it through projects.</div>
+    </div>
+    <div class="hero-card">
+      <div class="orbit">PHYSICAL<br>AI</div>
+      <div class="flow">
+        <span>Sense</span><i>→</i><span>Decide</span><i>→</i><span>Act</span><i>→</i><span>Inspect</span>
+      </div>
+      <p>Robots + sensors + AI + safety + human supervision</p>
+    </div>
+  </div>
+</section>
+
+<section class="disclaimer"><div class="container"><div class="notice"><div class="notice-title">⚠️ IMPORTANT — PROTOTYPE &amp; DEVELOPMENT DISCLAIMER</div><p><strong>This website is a prototype and is still under development.</strong> We are actively seeking feedback from engineering students, graduates, educators, industry professionals and employers to improve the content, structure and usefulness of this platform. Your reactions and suggestions will help us fine-tune it.</p><p><strong>Physical AI, robotics and their applications in robot management, deployment, training, operation and maintenance are rapidly evolving fields.</strong> The Physical AI and robotics industry in India is still at a relatively nascent stage, and the technologies, job roles, skills and employment opportunities are likely to evolve significantly over the coming years.</p><p>We believe that as the adoption of robots and intelligent machines expands across manufacturing, mobility, logistics, infrastructure, healthcare, agriculture, defence and other sectors, <strong>engineers and technically skilled professionals with the right combination of AI, robotics, electronics, software and mechanical skills will be needed in large numbers in the years ahead.</strong></p><p>This platform is intended to help students and young professionals understand emerging opportunities, identify relevant skills and learning pathways, and prepare themselves for jobs that may emerge as the industry develops.</p><p class="small"><strong>The information presented here is a work in progress and should not be considered a definitive or exhaustive representation of the industry or current employment opportunities.</strong></p></div></div></section>
+
+<section id="pathways" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">TWO PATHWAYS</p>
+      <h2>Different starting points. One physical-AI economy.</h2>
+    </div>
+    <div class="cards two">
+      <article class="card pathway">
+        <div class="tag">ENGINEER PATHWAY</div>
+        <h3>For ECE / CSE / Electrical / Mechatronics / Mechanical / Instrumentation</h3>
+        <p>Move from a conventional engineering degree into robotics, embedded systems, computer vision, autonomous systems, industrial automation and robotic inspection.</p>
+        <ul><li>Skills roadmap</li><li>Project portfolio</li><li>Industry certifications</li><li>Target job titles</li><li>Employer map</li></ul>
+        <a href="#specialisations">Explore specialisations →</a>
+      </article>
+      <article class="card pathway dark">
+        <div class="tag">ROBOT WORKFORCE PATHWAY</div>
+        <h3>For ITI / Diploma / graduates / experienced workers</h3>
+        <p>Become a robot operator, field technician, inspection technician or safety supervisor without needing to become a software engineer.</p>
+        <ul><li>Hands-on robot operation</li><li>Sensor & battery basics</li><li>Field troubleshooting</li><li>Confined-space safety</li><li>Inspection & reporting</li></ul>
+        <a href="#jobs">Explore job roles →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="specialisations" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">ENGINEERING SPECIALISATIONS</p>
+      <h2>Choose a direction — then build evidence.</h2>
+    </div>
+    <div id="specialisation-grid" class="cards grid"></div>
+  </div>
+</section>
+
+<section id="jobs" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">JOB MAP</p>
+      <h2>What could you actually be hired as?</h2>
+      <p>Search by job family, background and experience level. The initial database is a curated prototype, not a live vacancy feed.</p>
+    </div>
+    <div class="filters">
+      <input id="job-search" type="search" placeholder="Search job title or skill…">
+      <select id="job-level"><option value="">All levels</option><option>Entry</option><option>Junior</option><option>Experienced</option></select>
+      <select id="job-background"><option value="">All backgrounds</option><option>ECE</option><option>CSE</option><option>Electrical</option><option>Mechanical</option><option>Mechatronics</option><option>Instrumentation</option><option>ITI/Diploma</option></select>
+    </div>
+    <div id="job-table" class="table-wrap"></div>
+  </div>
+</section>
+
+<section id="companies" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">EMPLOYER MAP</p>
+      <h2>Companies to watch</h2>
+      <p>These are potential employers and industry partners across robotics, inspection, automation, AI and physical systems. Verify current openings before applying.</p>
+    </div>
+    <div class="company-search"><input id="company-search" type="search" placeholder="Search companies, sectors or skills…"></div>
+    <div id="company-grid" class="cards grid"></div>
+  </div>
+</section>
+
+<section id="resources" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">LEARNING RESOURCE MAP</p>
+      <h2>Learn → build → demonstrate → apply.</h2>
+    </div>
+    <div id="resource-grid" class="cards grid"></div>
+  </div>
+</section>
+
+<section class="section safety">
+  <div class="container safety-grid">
+    <div>
+      <p class="eyebrow">FLAGSHIP USE CASE</p>
+      <h2>Never send a person into a dangerous space first.</h2>
+      <p>Use a sensor/robot to assess the atmosphere and inspect the environment before a worker enters. Sewer and manhole inspection is one example; the same principle extends to tanks, plants, mines and other confined or hazardous environments.</p>
+    </div>
+    <div class="safety-flow">
+      <span>Gas + camera</span><b>→</b><span>Risk assessment</span><b>→</b><span>Robot inspection</span><b>→</b><span>Evidence + corrective action</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="container">
+    <p class="eyebrow">THE LONG-TERM VISION</p>
+    <h2>A labour-market map for the physical-AI economy.</h2>
+    <p>We are building a structured information layer that connects education, practical skills, projects, standards, employers and jobs. The database should eventually be maintained with dated sources and employer-verified requirements.</p>
+    <div class="principles">
+      <span>Industry-linked</span><span>Project-based</span><span>Safety-first</span><span>Accessible</span><span>Evidence-driven</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><strong>Physical AI Workforce India</strong><span>Prototype blueprint • 2026</span></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
