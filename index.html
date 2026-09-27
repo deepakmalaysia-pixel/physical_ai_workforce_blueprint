@@ -1,152 +1,422 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Physical AI Workforce India — pathways for engineering graduates, robot operators, technicians and safety inspectors.">
-  <title>Physical AI Workforce India</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="site-header">
-  <nav class="nav container">
-    <a class="brand" href="#home">Physical AI <span>Workforce India</span></a>
-    <button class="menu" aria-label="Toggle menu">☰</button>
-    <div class="nav-links">
-      <a href="#pathways">Pathways</a>
-      <a href="#specialisations">Specialisations</a>
-      <a href="#jobs">Jobs</a>
-      <a href="#companies">Companies</a>
-      <a href="#resources">Resources</a>
-      <a href="#about">About</a>
-    </div>
-  </nav>
-</header>
-
-<main id="home">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="eyebrow">INDIA'S EMERGING PHYSICAL-AI WORKFORCE</p>
-      <h1>Turn robotics into <span>careers</span>, not just courses.</h1>
-      <p class="lead">A practical career map connecting engineering graduates, technicians and robot operators to skills, projects, employers and real-world applications.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#pathways">Find your pathway</a>
-        <a class="btn secondary" href="#jobs">Explore job roles</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deeksha M G | Student Progress Tracker</title>
+    <meta
+      name="description"
+      content="A learner progress tracker for a single student working toward Data Analyst skills using SQL, Python, Excel, Power BI, Tableau, and business analytics concepts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">D</span>
+          <span>Deeksha M G</span>
+        </div>
+        <nav>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#resources">Resources</a>
+          <a href="#progress">Progress</a>
+        </nav>
       </div>
-      <div class="hero-note">Start with what you already know. Build the missing layer. Demonstrate it through projects.</div>
-    </div>
-    <div class="hero-card">
-      <div class="orbit">PHYSICAL<br>AI</div>
-      <div class="flow">
-        <span>Sense</span><i>→</i><span>Decide</span><i>→</i><span>Act</span><i>→</i><span>Inspect</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container cv-shell">
+          <div class="usage-notice">
+            <p>
+              This learning resource is intended for guided use and should be shared responsibly. Please follow the planned sequence and avoid jumping ahead without guidance.
+            </p>
+            <div class="usage-log">
+              <span class="label">Latest access</span>
+              <strong id="lastAccessStamp">Waiting for first access...</strong>
+            </div>
+          </div>
+
+          <div class="welcome-brief">
+            <p>
+              Dear Deeksha, you are already doing something meaningful by taking this path step by step. Learning is not about rushing or being perfect — it is about steady progress, reflection, and trust in your growth. You are capable, and every small step is building your future.
+            </p>
+          </div>
+
+          <div class="visitor-log-box">
+            <div class="visitor-header">
+              <span class="label">Visitor log</span>
+              <strong>Recent checks</strong>
+            </div>
+            <ul id="visitorLogList" class="visitor-log-list">
+              <li>No visits recorded yet.</li>
+            </ul>
+          </div>
+
+          <div class="profile-header">
+            <div>
+              <p class="eyebrow">Student progress tracker</p>
+              <h1>Deeksha M G</h1>
+              <p class="role-line">Self-paced Data Analyst Learning Journey</p>
+            </div>
+            <div class="profile-meta">
+              <span>Track milestones</span>
+              <span>SQL • Python • Excel • Power BI</span>
+            </div>
+          </div>
+
+          <div class="student-note">
+            <p>Dear Deeksha,</p>
+            <p>
+              This roadmap is here to support you at your own pace. You do not need to rush or feel pressured to have everything figured out.
+              It is meant to help you learn steadily, practice with confidence, and grow one skill at a time.
+              You are encouraged to pause, revisit concepts, ask for help, and celebrate every small win along the way.
+            </p>
+          </div>
+
+          <div id="encouragementBox" class="encouragement-box">
+            <p>Well done for taking one more step forward. Every small effort counts, and every completed task brings you closer to confidence. 🌱</p>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="section-intro">Personal learning overview</p>
+              <p class="lead">
+                This dashboard helps you track progress through SQL, Python, Excel, Power BI, Tableau,
+                and business analytics in a calm, guided, and encouraging way. It includes self-assessment,
+                practice checkpoints, reflection, and support so learning feels steady, realistic, and confidence-building.
+              </p>
+              <div class="cta-row">
+                <a class="primary-btn" href="#roadmap">View Roadmap</a>
+                <button id="resetProgress" class="secondary-btn" type="button">Reset Progress</button>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <div class="mini-stat">
+                <span class="label">Learner</span>
+                <strong>Deeksha M G</strong>
+              </div>
+              <div class="mini-stat">
+                <span class="label">Current phase</span>
+                <strong id="currentPhase">Phase 1</strong>
+              </div>
+              <div class="mini-stat">
+                <span class="label">Overall progress</span>
+                <strong id="heroProgress">0%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-flow">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Learning flow</p>
+            <h2>How the journey unfolds</h2>
+          </div>
+
+          <div class="flow-diagram uml-flow" aria-label="Student learning flow diagram">
+            <div class="flow-node uml-node">
+              <div class="node-header">
+                <span class="flow-step">01</span>
+                <span class="node-role">Goal</span>
+              </div>
+              <h3>Foundation</h3>
+              <p class="uml-meta">Understand core tools and concepts.</p>
+              <p>Build the base with SQL, Excel, Python, and data fundamentals.</p>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">→</div>
+            <div class="flow-node uml-node">
+              <div class="node-header">
+                <span class="flow-step">02</span>
+                <span class="node-role">Action</span>
+              </div>
+              <h3>Practice</h3>
+              <p class="uml-meta">Apply learning through real tasks.</p>
+              <p>Work on dashboards, projects, and analysis to turn theory into skill.</p>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">→</div>
+            <div class="flow-node uml-node">
+              <div class="node-header">
+                <span class="flow-step">03</span>
+                <span class="node-role">Review</span>
+              </div>
+              <h3>Confidence</h3>
+              <p class="uml-meta">Check progress and improve.</p>
+              <p>Reflect, self-assess, revise, and strengthen understanding before moving ahead.</p>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">→</div>
+            <div class="flow-node uml-node highlight">
+              <div class="node-header">
+                <span class="flow-step">04</span>
+                <span class="node-role">Result</span>
+              </div>
+              <h3>Career Ready</h3>
+              <p class="uml-meta">Prepared for opportunity.</p>
+              <p>Present your portfolio confidently and move toward interviews and job readiness.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="roadmap">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Roadmap</p>
+            <h2>Self-paced learning plan</h2>
+          </div>
+
+          <div id="phaseCards" class="phase-grid"></div>
+        </div>
+      </section>
+
+      <section class="support-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Support</p>
+            <h2>Gentle guidance for steady progress</h2>
+          </div>
+
+          <div class="support-grid">
+            <article class="support-card">
+              <span class="project-tag">Learning style</span>
+              <h3>Learn at your own pace</h3>
+              <p>There are no strict deadlines here. The goal is understanding, practice, and confidence.</p>
+            </article>
+
+            <article class="support-card">
+              <span class="project-tag">Quick check</span>
+              <h3>Self-review quiz</h3>
+              <p>Use the short quiz to confirm what you know before moving to the next topic.</p>
+            </article>
+
+            <article class="support-card">
+              <span class="project-tag">Ask for help</span>
+              <h3>Retry, revise, improve</h3>
+              <p>If a concept feels difficult, pause, revisit the lesson, and practice again without pressure.</p>
+            </article>
+          </div>
+
+          <div class="quiz-box">
+            <h3>Quick self-check</h3>
+            <div id="quizQuestion" class="quiz-question"></div>
+            <div id="quizOptions" class="quiz-options"></div>
+            <p id="quizFeedback" class="quiz-feedback"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Portfolio ideas</p>
+            <h2>Practical projects to build confidence</h2>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <span class="project-tag">Analytics</span>
+              <h3>Sales or Market Dashboard</h3>
+              <p>Use a public dataset to clean, analyze, and present trends in a business-friendly dashboard.</p>
+            </article>
+
+            <article class="portfolio-card">
+              <span class="project-tag">Research</span>
+              <h3>Government Data Analysis</h3>
+              <p>Explore public data, identify patterns, and build simple reports that explain what the numbers mean.</p>
+            </article>
+
+            <article class="portfolio-card">
+              <span class="project-tag">AI</span>
+              <h3>AI-Assisted Reporting</h3>
+              <p>Use AI tools to summarize report content, extract key findings, and convert them into structured insights.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="assessment-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Self-assessment</p>
+            <h2>Check your understanding before moving on</h2>
+          </div>
+
+          <div class="assessment-grid">
+            <article class="assessment-card">
+              <h3>Can I explain this in my own words?</h3>
+              <div class="rating-row">
+                <button class="rating-btn" type="button">Very confident</button>
+                <button class="rating-btn" type="button">Mostly confident</button>
+                <button class="rating-btn" type="button">Need revision</button>
+              </div>
+            </article>
+
+            <article class="assessment-card">
+              <h3>Can I solve a similar problem without notes?</h3>
+              <div class="rating-row">
+                <button class="rating-btn" type="button">Yes</button>
+                <button class="rating-btn" type="button">Sometimes</button>
+                <button class="rating-btn" type="button">Not yet</button>
+              </div>
+            </article>
+
+            <article class="assessment-card">
+              <h3>What should I do next?</h3>
+              <div class="rating-row">
+                <button class="rating-btn" type="button">Move ahead</button>
+                <button class="rating-btn" type="button">Revise again</button>
+                <button class="rating-btn" type="button">Ask for help</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="resources">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Study resources</p>
+            <h2>Curated free learning sources</h2>
+            <p class="lead" style="margin-top: 0.75rem; font-size: 0.95rem; opacity: 0.9;">
+              Carefully selected free resources from YouTube, official documentation, and beginner-friendly platforms.
+            </p>
+          </div>
+
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Indian Data Sets</h3>
+              <ul>
+                <li><strong>Environment:</strong> <a class="resource-link" href="https://www.cpcb.nic.in/" target="_blank" rel="noreferrer">CPCB</a> | <a class="resource-link" href="https://indiawaterportal.org/" target="_blank" rel="noreferrer">India Water Portal</a></li>
+                <li><strong>Economy:</strong> <a class="resource-link" href="https://www.data.gov.in/" target="_blank" rel="noreferrer">Open Government Data</a> | <a class="resource-link" href="https://www.mospi.gov.in/" target="_blank" rel="noreferrer">MOSPI</a></li>
+                <li><strong>Reference:</strong> <a class="resource-link" href="https://github.com/Devamma01052004" target="_blank" rel="noreferrer">Student repository</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>Quick project idea</h3>
+              <p>Start with an Indian dataset on pollution, groundwater depletion, supply-chain pressure, or inflation and build a mini dashboard with clean charts and clear insights. A strong example is analyzing crude price shocks, household budget stress, and the impact of war-driven supply disruptions.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3>SQL & Data Basics</h3>
+              <ul>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=alex+the+analyst+sql" target="_blank" rel="noreferrer">Alex the Analyst (YouTube)</a></li>
+                <li><a class="resource-link" href="https://sqlbolt.com/" target="_blank" rel="noreferrer">SQLBolt</a></li>
+                <li><a class="resource-link" href="https://www.kaggle.com/learn" target="_blank" rel="noreferrer">Kaggle Learn</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>Python for Analysis</h3>
+              <ul>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=freeCodeCamp+python+for+data+analysis" target="_blank" rel="noreferrer">freeCodeCamp.org (YouTube)</a></li>
+                <li><a class="resource-link" href="https://www.youtube.com/@Coreyms" target="_blank" rel="noreferrer">Corey Schafer</a></li>
+                <li><a class="resource-link" href="https://www.kaggle.com/learn" target="_blank" rel="noreferrer">Kaggle Learn</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>Excel & Reporting</h3>
+              <ul>
+                <li><a class="resource-link" href="https://exceljet.net/" target="_blank" rel="noreferrer">ExcelJet</a></li>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=excel+for+beginners+full+course" target="_blank" rel="noreferrer">YouTube Excel Tutorials</a></li>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=excelisfun" target="_blank" rel="noreferrer">ExcelIsFun (YouTube)</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>Power BI & Tableau</h3>
+              <ul>
+                <li><a class="resource-link" href="https://www.youtube.com/@GuyInACube" target="_blank" rel="noreferrer">Guy in a Cube (YouTube) — free Power BI tutorials</a></li>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=tableau+for+beginners+free+youtube" target="_blank" rel="noreferrer">Tableau beginner playlists on YouTube</a></li>
+                <li><a class="resource-link" href="https://learn.microsoft.com/en-us/training/browse/?products=power-bi" target="_blank" rel="noreferrer">Microsoft Learn — free Power BI modules</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>Optional public-domain sources</h3>
+              <ul>
+                <li><a class="resource-link" href="https://www.kaggle.com/datasets" target="_blank" rel="noreferrer">Kaggle Datasets</a></li>
+                <li><a class="resource-link" href="https://ourworldindata.org/" target="_blank" rel="noreferrer">Our World in Data</a></li>
+                <li><a class="resource-link" href="https://www.google.com/publicdata/directory" target="_blank" rel="noreferrer">Google Public Data Explorer</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>AI-Enabled Analytics</h3>
+              <ul>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=freeCodeCamp+ai+for+data+analysis" target="_blank" rel="noreferrer">freeCodeCamp.org (YouTube)</a></li>
+                <li><a class="resource-link" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noreferrer">Google ML Crash Course — free</a></li>
+                <li><a class="resource-link" href="https://cookbook.openai.com/" target="_blank" rel="noreferrer">OpenAI Cookbook</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-card">
+              <h3>Agentic AI & Workflow Basics</h3>
+              <ul>
+                <li><a class="resource-link" href="https://python.langchain.com/docs/" target="_blank" rel="noreferrer">LangChain Docs</a></li>
+                <li><a class="resource-link" href="https://learn.microsoft.com/en-us/azure/ai-services/openai/" target="_blank" rel="noreferrer">Microsoft Learn</a></li>
+                <li><a class="resource-link" href="https://www.youtube.com/results?search_query=ai+workflow+automation+python" target="_blank" rel="noreferrer">AI workflow tutorials</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress" class="progress-section">
+        <div class="container progress-wrap">
+          <div class="section-heading">
+            <p class="eyebrow">Progress tracker</p>
+            <h2>Keep learning momentum</h2>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-bar">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-meta">
+              <span id="progressText">0% complete</span>
+              <span id="progressCount">0 / 0 tasks</span>
+            </div>
+          </div>
+
+          <div id="taskList" class="task-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <section class="cta-section">
+      <div class="container cta-box">
+        <div>
+          <p class="eyebrow">Ready to begin</p>
+          <h2>Follow the roadmap and build a stronger career profile.</h2>
+        </div>
+        <a class="primary-btn" href="#roadmap">View Roadmap</a>
       </div>
-      <p>Robots + sensors + AI + safety + human supervision</p>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="disclaimer"><div class="container"><div class="notice"><div class="notice-title">⚠️ IMPORTANT — PROTOTYPE &amp; DEVELOPMENT DISCLAIMER</div><p><strong>This website is a prototype and is still under development.</strong> We are actively seeking feedback from engineering students, graduates, educators, industry professionals and employers to improve the content, structure and usefulness of this platform. Your reactions and suggestions will help us fine-tune it.</p><p><strong>Physical AI, robotics and their applications in robot management, deployment, training, operation and maintenance are rapidly evolving fields.</strong> The Physical AI and robotics industry in India is still at a relatively nascent stage, and the technologies, job roles, skills and employment opportunities are likely to evolve significantly over the coming years.</p><p>We believe that as the adoption of robots and intelligent machines expands across manufacturing, mobility, logistics, infrastructure, healthcare, agriculture, defence and other sectors, <strong>engineers and technically skilled professionals with the right combination of AI, robotics, electronics, software and mechanical skills will be needed in large numbers in the years ahead.</strong></p><p>This platform is intended to help students and young professionals understand emerging opportunities, identify relevant skills and learning pathways, and prepare themselves for jobs that may emerge as the industry develops.</p><p class="small"><strong>The information presented here is a work in progress and should not be considered a definitive or exhaustive representation of the industry or current employment opportunities.</strong></p></div></div></section>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Deeksha M G | Self-paced Roadmap for Data & AI Growth</p>
+      </div>
+    </footer>
 
-<section id="pathways" class="section">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">TWO PATHWAYS</p>
-      <h2>Different starting points. One physical-AI economy.</h2>
+    <div class="owner-score hidden" aria-label="Owner-only ATS score panel">
+      <span class="owner-label">Owner view</span>
+      <strong>ATS Match: 86/100</strong>
+      <small>Data Analyst role</small>
     </div>
-    <div class="cards two">
-      <article class="card pathway">
-        <div class="tag">ENGINEER PATHWAY</div>
-        <h3>For ECE / CSE / Electrical / Mechatronics / Mechanical / Instrumentation</h3>
-        <p>Move from a conventional engineering degree into robotics, embedded systems, computer vision, autonomous systems, industrial automation and robotic inspection.</p>
-        <ul><li>Skills roadmap</li><li>Project portfolio</li><li>Industry certifications</li><li>Target job titles</li><li>Employer map</li></ul>
-        <a href="#specialisations">Explore specialisations →</a>
-      </article>
-      <article class="card pathway dark">
-        <div class="tag">ROBOT WORKFORCE PATHWAY</div>
-        <h3>For ITI / Diploma / graduates / experienced workers</h3>
-        <p>Become a robot operator, field technician, inspection technician or safety supervisor without needing to become a software engineer.</p>
-        <ul><li>Hands-on robot operation</li><li>Sensor & battery basics</li><li>Field troubleshooting</li><li>Confined-space safety</li><li>Inspection & reporting</li></ul>
-        <a href="#jobs">Explore job roles →</a>
-      </article>
-    </div>
-  </div>
-</section>
 
-<section id="specialisations" class="section alt">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">ENGINEERING SPECIALISATIONS</p>
-      <h2>Choose a direction — then build evidence.</h2>
-    </div>
-    <div id="specialisation-grid" class="cards grid"></div>
-  </div>
-</section>
-
-<section id="jobs" class="section">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">JOB MAP</p>
-      <h2>What could you actually be hired as?</h2>
-      <p>Search by job family, background and experience level. The initial database is a curated prototype, not a live vacancy feed.</p>
-    </div>
-    <div class="filters">
-      <input id="job-search" type="search" placeholder="Search job title or skill…">
-      <select id="job-level"><option value="">All levels</option><option>Entry</option><option>Junior</option><option>Experienced</option></select>
-      <select id="job-background"><option value="">All backgrounds</option><option>ECE</option><option>CSE</option><option>Electrical</option><option>Mechanical</option><option>Mechatronics</option><option>Instrumentation</option><option>ITI/Diploma</option></select>
-    </div>
-    <div id="job-table" class="table-wrap"></div>
-  </div>
-</section>
-
-<section id="companies" class="section alt">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">EMPLOYER MAP</p>
-      <h2>Companies to watch</h2>
-      <p>These are potential employers and industry partners across robotics, inspection, automation, AI and physical systems. Verify current openings before applying.</p>
-    </div>
-    <div class="company-search"><input id="company-search" type="search" placeholder="Search companies, sectors or skills…"></div>
-    <div id="company-grid" class="cards grid"></div>
-  </div>
-</section>
-
-<section id="resources" class="section">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">LEARNING RESOURCE MAP</p>
-      <h2>Learn → build → demonstrate → apply.</h2>
-    </div>
-    <div id="resource-grid" class="cards grid"></div>
-  </div>
-</section>
-
-<section class="section safety">
-  <div class="container safety-grid">
-    <div>
-      <p class="eyebrow">FLAGSHIP USE CASE</p>
-      <h2>Never send a person into a dangerous space first.</h2>
-      <p>Use a sensor/robot to assess the atmosphere and inspect the environment before a worker enters. Sewer and manhole inspection is one example; the same principle extends to tanks, plants, mines and other confined or hazardous environments.</p>
-    </div>
-    <div class="safety-flow">
-      <span>Gas + camera</span><b>→</b><span>Risk assessment</span><b>→</b><span>Robot inspection</span><b>→</b><span>Evidence + corrective action</span>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section about">
-  <div class="container">
-    <p class="eyebrow">THE LONG-TERM VISION</p>
-    <h2>A labour-market map for the physical-AI economy.</h2>
-    <p>We are building a structured information layer that connects education, practical skills, projects, standards, employers and jobs. The database should eventually be maintained with dated sources and employer-verified requirements.</p>
-    <div class="principles">
-      <span>Industry-linked</span><span>Project-based</span><span>Safety-first</span><span>Accessible</span><span>Evidence-driven</span>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer><div class="container"><strong>Physical AI Workforce India</strong><span>Prototype blueprint • 2026</span></div></footer>
-<script src="app.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
